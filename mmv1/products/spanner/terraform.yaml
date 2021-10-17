@@ -46,8 +46,8 @@ overrides: !ruby/object:Overrides::ResourceOverrides
         name: 'deletion_protection'
         default_value: true
         description: |
-          Whether or not to allow Terraform to destroy the instance. Unless this field is set to false
-          in Terraform state, a `terraform destroy` or `terraform apply` that would delete the instance will fail.
+          Whether or not to allow Terraform to destroy the database. Unless this field is set to false
+          in Terraform state, a `terraform destroy` or `terraform apply` that would delete the database will fail.
     properties:
       name: !ruby/object:Overrides::Terraform::PropertyOverride
         validation: !ruby/object:Provider::Terraform::Validation
